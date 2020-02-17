@@ -1,0 +1,25 @@
+{
+  "name": "gdl004-md-links",
+  "version": "1.0.0",
+  "description": "Library that read links and check if they are ok, or are broken.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KARENLABO/GDL004-md-links.git"
+  },
+  "author": "Karen Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KARENLABO/GDL004-md-links/issues"
+  },
+  "homepage": "https://github.com/KARENLABO/GDL004-md-links#readme",
+  "dependencies": {
+    "yargs": "^15.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
