@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/KARENLABO/GDL004-md-links#readme",
   "dependencies": {
+    "colors": "^1.4.0",
     "yargs": "^15.1.0"
   },
   "devDependencies": {
