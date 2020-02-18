@@ -1,7 +1,8 @@
+const colors = require('colors');
 const options = {
     path: {
         demand: true,
-        alias: 'p'
+        alias: 'p',
     }
 }
 
@@ -11,6 +12,7 @@ const argv = require('yargs')
     .command('validate--stats', 'We can also combine --stats and --validate to obtain statistics that need validation results.', options)
     .help()
     .argv;
+
 
 module.exports = {
     argv
