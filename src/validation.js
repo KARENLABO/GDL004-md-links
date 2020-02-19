@@ -4,7 +4,7 @@ const path = require('path');
 const colors = require('colors');
 const fs = require('fs');
 
-const validationPath = async(value) => {
+const validationPath = (value) => {
     return new Promise((resolve, reject) => {
         if (typeof value == 'number') {
             reject(`Numbers like '${value}' are not supported, please replace with a file type.md`.red);
@@ -26,8 +26,7 @@ const validationPath = async(value) => {
 };
 
 const runValidate = async(value) => {
-    await validationPath(value)
-    return
+    await validationPath(value);
 };
 
 
