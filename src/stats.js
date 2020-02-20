@@ -1,8 +1,9 @@
 const statsLinks = (data) => {
-    console.log(data);
+    console.log(data.length);
+
 
 };
 
-module.export = {
+module.exports = {
     statsLinks
-}
+};

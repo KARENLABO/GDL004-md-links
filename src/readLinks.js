@@ -14,14 +14,12 @@
           if (filterLinks.length < 1) {
               reject(`there is not links at ${value}`.bgBlue)
           } else {
-              resolve(valueLinks(filterLinks));
+              resolve(filterLinks);;
           }
       })
   };
 
-  const valueLinks = (value) => {
-      return value;
-  }
+
 
   module.exports = {
       checkLinks
