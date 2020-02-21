@@ -1,7 +1,7 @@
   const fs = require('fs');
   const markdownLinkExtractor = require('markdown-link-extractor');
   const colors = require('colors');
-  const arrayLinks = require('./app').valLinks;
+
 
 
   const checkLinks = (value) => {
@@ -12,7 +12,7 @@
           const links = markdownLinkExtractor(markdown);
           const filterLinks = links.filter(data => data.indexOf('http') !== -1)
           if (filterLinks.length < 1) {
-              reject(`there is not links at ${value}`.bgBlue)
+              reject(`There are not links at ${value}`.bgRed)
           } else {
               resolve(filterLinks);;
           }

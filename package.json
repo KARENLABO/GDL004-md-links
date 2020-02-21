@@ -19,6 +19,7 @@
   "dependencies": {
     "colors": "^1.4.0",
     "markdown-link-extractor": "^1.2.2",
+    "node-fetch": "^2.6.0",
     "yargs": "^15.1.0"
   },
   "devDependencies": {
