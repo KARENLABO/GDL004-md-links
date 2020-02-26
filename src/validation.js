@@ -1,5 +1,4 @@
 const argv = require('./yargs.js').argv;
-
 const path = require('path');
 const colors = require('colors');
 const fs = require('fs');
@@ -14,9 +13,7 @@ const validationPath = (value) => {
                 reject(`--Please verify your file '${value}' it is not supported,  you have to remplaced it to a file type.md--`.red);
             } else {
                 fs.stat(value, (err) => {
-
                     if (!err) {
-                        console.log(value);
                         resolve(value);
                     } else if (err.code === 'ENOENT') {
                         console.log(`File or directory '${(value)}' does not exist, please check it`.red);
